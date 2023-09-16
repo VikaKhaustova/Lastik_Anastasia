@@ -12,7 +12,7 @@ header {
 }
 
 .button {
-    background-color: #36bbce;
+    background-color: #00cdcd;
     color: black;
     text-decoration: none;
     padding: 15px;
@@ -46,6 +46,7 @@ h1 {
 
 .post-text {
     font-size: 24px;
+    text-align: center;
 }
 
 .info {
@@ -57,10 +58,14 @@ h1 {
 
 .post {
     background-color: white;
-    padding: 15px 45px 30px 45px;
+    padding: 30px 45px 30px 45px;
     width: 400px;
     margin: 20px;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
 }
 
 .article-but {
@@ -102,10 +107,10 @@ footer {
 
 .sulku {
     position:fixed;
-    top:230px;
-    right:-2px;
-    width:100px;
-    height:200px;
+    top:100px;
+    right:-6px;
+    width:80px;
+    height:260px;
     background-color:aqua;
     border-radius: 20px;
     border:3px dotted pink;
@@ -147,24 +152,50 @@ footer {
 }
 
 .nav-link:hover {
-    font-size:30px;
+    font-size:20px;
     color: rgb(252, 255, 175);
     text-decoration:none;
     display: block;
-    border-bottom:3px dotted rgba(175, 138, 250, 0.69);;
+    border-bottom:3px dotted rgba(175, 138, 250, 0.69);
+    transition:0.3s;
 }
 
-.post:hover {
-     width:90%;     
-     display:flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
+
+.post:hover {     
+    background-color:#133aac;
+    padding: 30px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    transition:0.3s;
 }
 
 
 .post:hover .article-but{
-    
+    text-decoration: none;
+    background-color:white;
+    color:#133aac;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    transition:0.4s;
+}
+
+
+.post:visited .article-but{
+    text-decoration: none;
+    background-color:white;
+    color:#133aac;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    transition:0.4s;
 }
 
 .button:hover {
@@ -175,4 +206,37 @@ footer {
     font-size: 24px;
     border-radius: 10px;
     display: block;
+    transition:0.6s;
+}
+
+
+.post:hover .post-text {
+    font-size: 24px;
+    text-align: center;
+    color:white;
+    transition:0.4s;
+}
+
+.post:hover .new {
+    color:white;
+    transition:0.4s;
+}
+
+.post .navyshnuku {
+    text-align: center;
+}
+
+.social {
+    float:right;
+    margin:10px;
+}
+
+.socials {
+    float:right;
+    margin:10px;
+}
+
+.socialss {
+    float:right;
+    margin:10px;
 }
